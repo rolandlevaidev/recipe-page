@@ -8,24 +8,27 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="navbar" class="flex flex-row justify-between px-5 md:px-10 py-5 border-b-2 border-blue-300 text-xl">
-      <h1 class="text-2xl">Recipes :)</h1>
-      <input
-        type="text"
-        placeholder="Search..."
-        class="border-2 border-slate-400 rounded-lg placeholder:pl-2 focus:outline-none focus:ring-2 hover:ring-2"
-      />
-      <div class="hidden md:inline-flex flex-row">
-        <ol class="flex flex-row">
-          <li class="px-5 hover:underline"><a href="#">Home</a></li>
-          <li class="px-5 hover:underline"><a href="#">My recipes</a></li>
-        </ol>
-        <button class="px-5 py-1 border-2 border-lime-400 rounded-lg bg-lime-400 text-white hover:bg-green-500">
-          Log in
-        </button>
+    <div class="border-b-2 border-blue-300">
+      <div id="navbar" class="container mx-auto flex flex-row justify-between px-5 md:px-10 py-5 text-xl">
+        <h1 class="text-2xl">Recipes :)</h1>
+        <input
+          type="text"
+          placeholder="Search..."
+          class="border-2 border-slate-400 rounded-lg placeholder:pl-2 focus:outline-none focus:ring-2 hover:ring-2"
+        />
+        <div class="hidden md:inline-flex flex-row">
+          <ol class="flex flex-row">
+            <li class="px-5 hover:underline"><a href="#">Home</a></li>
+            <li class="px-5 hover:underline"><a href="#">My recipes</a></li>
+          </ol>
+          <button class="px-5 py-1 border-2 border-lime-400 rounded-lg bg-lime-400 text-white hover:bg-green-500">
+            Log in
+          </button>
+        </div>
+        <button class="block md:hidden px-5 py-1 border-2 border-slate-400 rounded-lg hover:bg-slate-100">Menu</button>
       </div>
-      <button class="block md:hidden px-5 py-1 border-2 border-slate-400 rounded-lg hover:bg-slate-100">Menu</button>
     </div>
+
     <section id="recipe">
       <div class="container mx-auto my-10 px-5 md:px-10">
         <div class="flex flex-col md:flex-row justify-center">
